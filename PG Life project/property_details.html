@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ganpati Paying Guest | PG Life</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/property_details.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" style="height: 45px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item sign-items">
+                        <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal"
+                            data-bs-target="#signupModal"><i class="fa-solid fa-user sign-icon"></i>Signup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal"><i
+                                class="fas fa-sign-in-alt sign-icon"></i>Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login and Signup modal form  -->
+    <div class="modal fade login-modal" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title fs-5" id="loginModal">Login with PGLife</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><i class="fas fa-user"></i></span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Email">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><i class="fas fa-lock"></i></span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Password">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn btn-info" type="button">Login</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="login-footer-content">
+                        <a href="#" class="already-sign" data-bs-dismiss="modal" data-bs-toggle="modal"
+                            data-bs-target="#signupModal">Click
+                            here</a> to register a new account
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade signup-modal" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title fs-5" id="signupModal">Signup with PGLife</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><i class="fas fa-user"></i></span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Full Name">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><i
+                                class="fa-solid fa-phone"></i></span>
+                        <input type="number" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Phone Number">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><i
+                                class="fas fa-envelope"></i></span>
+                        <input type="email" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Email">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><i class="fas fa-lock"></i></span>
+                        <input type="password" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Password">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><i
+                                class="fas fa-university"></i></span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="College Name">
+                    </div>
+                    <div class="radio-buttons">
+                        <span class="radio-item"> I'm a </span>
+                        <input type="radio" name="gender" class="radio-item">Male
+                        <input type="radio" name="gender" class="radio-item">Female
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn btn-info" type="button">Create Account</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="signup-footer-content">
+                        Already have an account? <a href="#" class="sign-a" data-bs-dismiss="modal"
+                            data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb  -->
+    <nav aria-label="breadcrumb" class="breadcrumb-area">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="property_list.html">Mumbai</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Ganpati Paying Gueast</li>
+        </ol>
+    </nav>
+
+    <!-- Image crousel section  -->
+    <div class="image-crousel-item">
+        <div id="propertiesimage" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#propertiesimage" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#propertiesimage" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#propertiesimage" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/properties/1/1d4f0757fdb86d5f.jpg" class="d-block w-100" alt="properties_image">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/properties/1/46ebbb537aa9fb0a.jpg" class="d-block w-100" alt="properties_image">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/properties/1/eace7b9114fd6046.jpg" class="d-block w-100" alt="properties_image">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#propertiesimage" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#propertiesimage" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Property detals section  -->
+    <div class="flat-detail-container">
+        <div class="page-container pg-details">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="rating-section">
+                        <div class="star-ratings">
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star-half-alt rating-star"></i>
+                        </div>
+                        <div class="heart-rating">
+                            <i class="far fa-heart"></i>
+                            <span>3 interested</span>
+                        </div>
+                    </div>
+                    <h2 class="card-title">Navkar Paying Guest</h2>
+                    <div class="card-text">
+                        <div class="flat-adress">
+                            <p class="address-para">44, Juhu Scheme, Juhu, Mumbai, Maharashtra 400058</p>
+                        </div>
+                        <div class="flat-gender-logo">
+                            <img src="img/male.png" alt="">
+                        </div>
+                    </div>
+                    <div class="price-view-section">
+                        <div class="price-details">
+                            <h4>Rs 9,500/-</h4>
+                            <span>per month</span>
+                        </div>
+                        <div class="view-btn">
+                            <a href="property_details.html">
+                                <button class="btn btn-info button btn-lg">View</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ameniies section  -->
+    <div class="amenities page-container-bg">
+        <div class="page-container">
+            <h1>Amenities</h1>
+            <div class="amenities-section">
+                <div class="building">
+                    <h5>Building</h5>
+                    <div class="amenity-logo">
+                        <img src="img/amenities/powerbackup.svg" alt="powerbackup">
+                        <span>Power backup</span>
+                    </div>
+                    <div class="amenity-logo">
+                        <img src="img/amenities/lift.svg" alt="lift">
+                        <span>Lift</span>
+                    </div>
+                </div>
+                <div class="common-area">
+                    <h5>Common Area</h5>
+                    <div class="amenity-logo">
+                        <img src="img/amenities/wifi.svg" alt="wifi">
+                        <span>Wifi</span>
+                    </div>
+                    <div class="amenity-logo">
+                        <img src="img/amenities/tv.svg" alt="tv">
+                        <span>Dinning</span>
+                    </div>
+                    <div class="amenity-logo">
+                        <img src="img/amenities/rowater.svg" alt="rowater">
+                        <span> Water Purifier</span>
+                    </div>
+                    <div class="amenity-logo">
+                        <img src="img/amenities/dining.svg" alt="dinning">
+                        <span>Dinning</span>
+                    </div>
+                    <div class="amenity-logo">
+                        <img src="img/amenities/washingmachine.svg" alt="washing-machine">
+                        <span>Washing Machine</span>
+                    </div>
+                </div>
+                <div class="bedroom">
+                    <h5>Bedroom</h5>
+                    <div class="amenity-logo">
+                        <img src="img/amenities/bed.svg" alt="bed">
+                        <span>Bed with Matress</span>
+                    </div>
+                    <div class="amenity-logo">
+                        <img src="img/amenities/ac.svg" alt="ac">
+                        <span>Air Conditioner</span>
+                    </div>
+                </div>
+                <div class="washroom">
+                    <h5>Washroom</h5>
+                    <div class="amenity-logo">
+                        <img src="img/amenities/geyser.svg" alt="geyser">
+                        <span>Geyser</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review section  -->
+    <div class="review-section">
+        <div class="page-container">
+            <h1 class="about-heading">About the Property</h1>
+            <p>Furnished studio apartment - share it with close friends! Located in posh area of Bijwasan in Delhi, this
+                house is available for both boys and girls. Go for a private room or opt for a shared one and make it
+                your own abode. Go out with your new friends - catch a movie at the nearest cinema hall or just chill in
+                a cafe which is not even 2 kms away. Unwind with your flatmates after a long day at work/college. With a
+                common living area and a shared kitchen, make your own FRIENDS moments. After all, there's always a Joey
+                with unlimited supply of food. Remember, all it needs is one crazy story to convert a roomie into a BFF.
+                What's nearby/Your New Neighborhood 4.0 Kms from Dwarka Sector- 21 Metro Station.</p>
+        </div>
+    </div>
+
+    <!-- Rating section  -->
+    <div class="property-rating-section page-container-bg">
+        <div class="page-container">
+            <div class="property-rating">
+                <h1>Property Rating</h1>
+                <div class="rating-amenities-section">
+                    <div class="rating-amenities">
+                        <div class="cleanliness flat-rating-logo">
+                            <i class="rating-criteria-icon fas fa-broom"></i>
+                            <span>Cleanliness</span>
+                            <div class="page-star-logo">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <div class="food-quality flat-rating-logo">
+                            <i class="rating-criteria-icon fas fa-utensils"></i>
+                            <span>Food Quality</span>
+                            <div class="page-star-logo">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="safety flat-rating-logo">
+                            <i class="rating-criteria-icon fa fa-lock"></i>
+                            <span>Safety</span>
+                            <div class="page-star-logo">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating-circle-section">
+                        <div class="rating-circle">
+                            <div class="circle-star-rating">
+                                <h1>4.2</h1>
+                            </div>
+                            <div>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- people review section -->
+    <div class="people-review-section">
+        <div class="page-container">
+            <div class="people-say">
+                <div class="review ">
+                    <h1>What people say</h1>
+                </div>
+                <div class="review-content">
+                    <img src="img/man.png" alt="man">
+                    <p><i class="fa fa-quote-left"></i>You just have to arrive at the place, it's fully furnished
+                        and
+                        stocked
+                        with all basic amenities and services and even your friends are welcome.</p>
+                    <p class="reviewer-name">- Ashutosh Gowariker</p>
+                </div>
+                <div class="review-content">
+                    <img src="img/man.png" alt="man">
+                    <p><i class="fa fa-quote-left"></i>You just have to arrive at the place, it's fully furnished
+                        and
+                        stocked
+                        with all basic amenities and services and even your friends are welcome.</p>
+                    <p class="reviewer-name">- Karan Johar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+    <footer>
+        <div class="major-city">
+            <div class="city-link">
+                <a href="property_list.html">PG in Delhi</a>
+            </div>
+            <div class="city-link">
+                <a href="property_list.html">PG in Mumbai</a>
+            </div>
+            <div class="city-link">
+                <a href="property_list.html">PG in Hyderabad</a>
+            </div>
+            <div class="city-link">
+                <a href="property_list.html"> PG in Bangalore</a>
+            </div>
+        </div>
+
+        <div class="copyrights">
+            © 2020 Copyright PG Life
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

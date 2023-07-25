@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Poppins&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'poppins' sans-serif;
+}
+
+nav {
+    display: flex;
+}
+
+#navbar {
+    height: auto;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.logo img {
+    height: 45px;
+    margin: 3px 15px;
+}
+
+ul.sign-items {
+    margin-right: 20px;
+}
+
+.sign-icon {
+    margin: 0px 10px;
+    font-weight: 600;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.already-sign {
+    text-decoration: none;
+    color: #0dcaf0;
+}
+
+.btn-close {
+    --bs-btn-close-focus-shadow: black;
+}
+
+
+.radio-item {
+    margin: 10px 10px;
+}
+
+/* breadcrumb css starts */
+.breadcrumb-area {
+    background-color: #e5e3e8;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb {
+    padding: 0px 22px;
+    font-size: 14px;
+    position: relative;
+    top: 5px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #4dc7bc;
+}
+
+/* breadcrumb css end */
+
+
+
+footer {
+    background-color: black;
+    margin-top: 30px;
+}
+
+.major-city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.major-city-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-link {
+    margin: 35px 40px;
+}
+
+.city-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.city-link a:hover {
+    text-decoration: underline;
+}
+
+.copyrights {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .major-city {
+        flex-direction: column;
+    }
+
+    .city-link {
+        margin-block: 13px;
+    }
+}

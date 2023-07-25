@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Best PG's in Mumbai | PG Life</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/property_list.css">
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" style="height: 45px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item sign-items">
+                        <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal"
+                            data-bs-target="#signupModal"><i class="fa-solid fa-user sign-icon"></i>Signup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal"><i
+                                class="fas fa-sign-in-alt sign-icon"></i>Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login and Signup modal form  -->
+    <div class="modal fade login-modal" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title fs-5" id="loginModal">Login with PGLife</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><i class="fas fa-user"></i></span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Email">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><i class="fas fa-lock"></i></span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Password">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn btn-info" type="button">Login</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="login-footer-content">
+                        <a href="#" class="already-sign" data-bs-dismiss="modal" data-bs-toggle="modal"
+                            data-bs-target="#signupModal">Click
+                            here</a> to register a new account
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade signup-modal" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title fs-5" id="signupModal">Signup with PGLife</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><i class="fas fa-user"></i></span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Full Name">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><i
+                                class="fa-solid fa-phone"></i></span>
+                        <input type="number" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Phone Number">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><i
+                                class="fas fa-envelope"></i></span>
+                        <input type="email" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Email">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><i class="fas fa-lock"></i></span>
+                        <input type="password" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Password">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><i
+                                class="fas fa-university"></i></span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="College Name">
+                    </div>
+                    <div class="radio-buttons">
+                        <span class="radio-item"> I'm a </span>
+                        <input type="radio" name="gender" class="radio-item">Male
+                        <input type="radio" name="gender" class="radio-item">Female
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn btn-info" type="button">Create Account</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="signup-footer-content">
+                        Already have an account? <a href="#" class="sign-a" data-bs-dismiss="modal"
+                            data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- breadcrumb section  -->
+    <nav aria-label="breadcrumb" class="breadcrumb-area">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Mumbai</li>
+        </ol>
+    </nav>
+
+    <!-- Filter section  -->
+    <div class="filters-container">
+        <div class="filter filter-buttons">
+            <button class="btn-filter btn-filters" data-bs-toggle="modal" data-bs-target="#genderModal"><img
+                    src="img/filter.png" alt="filter"></button>
+            <span class="filter-desc">Filter</span>
+        </div>
+        <div class="asc filter-buttons">
+            <button class="btn-asc btn-filters"><img src="img/asc.png" alt="asc"></button>
+            <span class="filter-desc">Highest rent first</span>
+        </div>
+        <div class="desc filter-buttons">
+            <button class="btn-desc btn-filters"><img src="img/desc.png" alt="desc"></button>
+            <span class="filter-desc"> Lowest rent first</span>
+        </div>
+    </div>
+
+    <!-- Gender modal section  -->
+    <div class="modal fade" id="genderModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="genderModal">Filters</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 style="color: grey;">Gender</h5>
+                </div>
+                <hr>
+                <div class="modal-body">
+                    <button type="button" class="btn btn-outline-dark gender-btn always-dark">No Fiilter</button>
+                    <button type="button" class="btn btn-outline-dark gender-btn"><i
+                            class="fas fa-venus-mars"></i>Unisex</button>
+                    <button type="button" class="btn btn-outline-dark gender-btn"><i
+                            class="fas fa-mars"></i>Male</button>
+                    <button type="button" class="btn btn-outline-dark gender-btn"><i
+                            class="fas fa-venus"></i>Female</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success modal-close-btn" data-bs-dismiss="modal">Okay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Property list section  -->
+    <div class="property-list-container">
+        <div class="card mb-3" style="max-width: 700px;">
+            <div class="row g-0">
+                <div class="col-md-4 image-container container">
+                    <img src="img/properties/1/1d4f0757fdb86d5f.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <div class="rating-section">
+                            <div class="star-ratings">
+                                <i class="fas fa-star rating-star"></i>
+                                <i class="fas fa-star rating-star"></i>
+                                <i class="fas fa-star rating-star"></i>
+                                <i class="fas fa-star rating-star"></i>
+                                <i class="fas fa-star rating-star"></i>
+                            </div>
+                            <div class="heart-rating">
+                                <i class="far fa-heart"></i>
+                                <span>6 interested</span>
+                            </div>
+                        </div>
+                        <h5 class="card-title">Ganpati Paying Guest</h5>
+                        <div class="card-text">
+                            <div class="flat-adress">
+                                <p>Police Beat, Sainath Complex, Besides, SV Rd, Daulat Nagar, Borivali East, Mumbai -
+                                    400066</p>
+                            </div>
+                            <div class="flat-gender-logo">
+                                <img src="img/unisex.png" alt="">
+                            </div>
+                        </div>
+                        <div class="price-view-section">
+                            <div class="price-details">
+                                <h4>Rs 8,500/-</h4>
+                                <span>per month</span>
+                            </div>
+                            <div class="view-btn">
+                                <a href="property_details.html">
+                                    <button class="btn btn-info button">View</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 700px;">
+            <div class="row g-0">
+                <div class="col-md-4 image-container container">
+                    <img src="img/properties/1/46ebbb537aa9fb0a.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <div class="rating-section">
+                            <div class="star-ratings">
+                                <i class="fas fa-star rating-star"></i>
+                                <i class="fas fa-star rating-star"></i>
+                                <i class="fas fa-star rating-star"></i>
+                                <i class="fas fa-star rating-star"></i>
+                                <i class="fas fa-star-half-alt rating-star"></i>
+                            </div>
+                            <div class="heart-rating">
+                                <i class="far fa-heart"></i>
+                                <span>3 interested</span>
+                            </div>
+                        </div>
+                        <h5 class="card-title">Navkar Paying Guest</h5>
+                        <div class="card-text">
+                            <div class="flat-adress">
+                                <p>44, Juhu Scheme, Juhu, Mumbai, Navi Mumbai, Maharashtra 400058</p>
+                            </div>
+                            <div class="flat-gender-logo">
+                                <img src="img/male.png" alt="">
+                            </div>
+                        </div>
+                        <div class="price-view-section">
+                            <div class="price-details">
+                                <h4>Rs 9,500/-</h4>
+                                <span>per month</span>
+                            </div>
+                            <div class="view-btn">
+                                <a href="property_details.html">
+                                    <button class="btn btn-info button">View</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 700px;">
+            <div class="row g-0">
+                <div class="col-md-4 image-container container">
+                    <img src="img/properties/1/eace7b9114fd6046.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <div class="rating-section">
+                            <div class="star-ratings">
+                                <i class="fas fa-star rating-star"></i>
+                                <i class="fas fa-star rating-star"></i>
+                                <i class="fas fa-star rating-star"></i>
+                                <i class="fas fa-star-half-alt rating-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="heart-rating">
+                                <i class="far fa-heart"></i>
+                                <span>2 interested</span>
+                            </div>
+                        </div>
+                        <h5 class="card-title">PG for Girls Borivali West</h5>
+                        <div class="card-text">
+                            <div class="flat-adress">
+                                <p>Plot no.258/D4, Gorai no.2, Borivali West, Mumbai, Maharashtra 400092</p>
+                            </div>
+                            <div class="flat-gender-logo">
+                                <img src="img/female.png" alt="">
+                            </div>
+                        </div>
+                        <div class="price-view-section">
+                            <div class="price-details">
+                                <h4>Rs 8,000/-</h4>
+                                <span>per month</span>
+                            </div>
+                            <div class="view-btn">
+                                <a href="property_details.html">
+                                    <button class="btn btn-info button">View</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+    <footer>
+        <div class="major-city">
+            <div class="city-link">
+                <a href="property_list.html">PG in Delhi</a>
+            </div>
+            <div class="city-link">
+                <a href="property_list.html">PG in Mumbai</a>
+            </div>
+            <div class="city-link">
+                <a href="property_list.html">PG in Hyderabad</a>
+            </div>
+            <div class="city-link">
+                <a href="property_list.html"> PG in Bangalore</a>
+            </div>
+        </div>
+
+        <div class="copyrights">
+            © 2020 Copyright PG Life
+        </div>
+    </footer>
+    <!-- footer ends from here  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

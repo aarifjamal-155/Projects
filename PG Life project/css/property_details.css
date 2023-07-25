@@ -1,0 +1,199 @@
+.page-container {
+    max-width: 800px;
+    padding: 80px 24px;
+    margin: auto;
+}
+
+.page-container-bg {
+    background-color: #fcfaf7;
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.pg-details {
+    padding: 40px 24px;
+}
+
+.card {
+    border: none;
+    border-radius: 0;
+}
+
+.rating-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.star-ratings {
+    color: red;
+    font-size: 10px;
+}
+
+.rating-star {
+    margin: 0px 3px;
+}
+
+.heart-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heart-rating i {
+    color: red;
+    cursor: pointer;
+}
+
+.heart-rating span {
+    font-size: 10px;
+}
+
+.property-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.address-para {
+    font-size: 18px;
+}
+
+.flat-gender-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.price-view-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-details {
+    display: flex;
+    gap: 7px;
+}
+
+.button {
+    padding: 6px 36px;
+    border-radius: 0;
+    color: white;
+}
+
+.amenities-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.amenity-logo {
+    margin: 10px 0;
+}
+
+.about-heading {
+    margin-bottom: 30px;
+}
+
+.page-star-logo {
+    color: #4dc7bc;
+    font-size: 12px;
+}
+
+.rating-circle-section {
+    display: flex;
+    align-items: center;
+}
+
+.rating-amenities-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flat-rating-logo {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    margin-block: 40px;
+}
+
+.flat-rating-logo span {
+    margin-left: 10px;
+    min-width: 150px;
+}
+
+.rating-circle {
+    width: 170px;
+    height: 170px;
+    border-radius: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #66C2BD;
+    color: white;
+    font-size: 14px;
+}
+
+.review-content {
+    height: 230px;
+    background-color: #fcfaf7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 120px;
+    margin-bottom: 166px;
+}
+
+.review-content img {
+    width: 100px;
+    border-radius: 75px;
+    position: relative;
+    bottom: 50px;
+}
+
+/* Media queries for mobile responsive  */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .page-container {
+        padding: 50px 24px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .address-para {
+        font-size: 16px;
+    }
+
+    .amenities-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .rating-amenities-section {
+        flex-direction: column;
+    }
+
+    .rating-circle-section {
+        justify-content: center;
+    }
+}
